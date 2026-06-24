@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Royhan Akbar, S.Kom.</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f4f6f9;
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        /* Header Accent Bar */
+        .accent-bar {
+            height: 8px;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+        }
+
+        /* Main Content Padding */
+        .content {
+            padding: 25px 20px;
+        }
+
+        /* Profile Section */
+        .profile-header {
+            margin-bottom: 25px;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 20px;
+        }
+        .profile-header h1 {
+            font-size: 24px;
+            color: #1e3c72;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .profile-header h2 {
+            font-size: 16px;
+            color: #4a5568;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            display: block;
+            font-size: 13px;
+            color: #718096;
+        }
+        .contact-info span {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+        .contact-info a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        /* Section Layout */
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #1e3c72;
+            margin-bottom: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            margin-left: 10px;
+            height: 1px;
+            background-color: #e2e8f0;
+        }
+
+        /* Text Blocks */
+        .summary-text {
+            font-size: 14px;
+            color: #4a5568;
+            text-align: justify;
+        }
+
+        /* Timeline Items (Education & Experience) */
+        .item {
+            margin-bottom: 15px;
+        }
+        .item-header {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .item-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #2d3748;
+            display: inline-block;
+        }
+        .item-date {
+            font-size: 12px;
+            color: #a0aec0;
+            float: right;
+        }
+        .item-subtitle {
+            font-size: 13px;
+            color: #4a5568;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        .item-desc {
+            font-size: 13px;
+            color: #718096;
+            padding-left: 15px;
+        }
+        .item-desc li {
+            margin-bottom: 2px;
+        }
+
+        /* Skills Badges */
+        .skills-container {
+            margin-bottom: 10px;
+        }
+        .skills-category {
+            font-size: 13px;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 6px;
+        }
+        .badge-group {
+            margin-bottom: 10px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #edf2f7;
+            color: #2d3748;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-right: 6px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .badge.tech {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+        }
+
+        /* Clearfix for floating date */
+        .item-header::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Responsive adjustments for mobile screens */
+        @media (max-width: 480px) {
+            .item-date {
+                float: none;
+                display: block;
+                margin-top: 2px;
+                margin-bottom: 4px;
+            }
+            body {
+                padding: 5px;
+            }
+            .content {
+                padding: 15px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Garis Aksen Atas -->
+        <div class="accent-bar"></div>
+        
+        <div class="content">
+            <!-- Profil Utama -->
+            <div class="profile-header">
+                <h1>ROYHAN AKBAR, S.Kom.</h1>
+                <h2>Mobile Application Developer / Software Engineer</h2>
+                <div class="contact-info">
+                    <span>📍 Indonesia</span>
+                    <span>📞 081918433319</span>
+                    <span>✉️ <a href="mailto:nanakuu42@gmail.com">nanakuu42@gmail.com</a></span>
+                    <span>🔗 <a href="#" target="_blank">linkedin.com/in/royhanakbar</a></span>
+                </div>
+            </div>
+
+            <!-- Tentang Saya -->
+            <div class="section">
+                <div class="section-title">Tentang Saya</div>
+                <p class="summary-text">
+                    Lulusan Sarjana Komputer dari Universitas Darussalam Gontor yang berfokus pada rekayasa perangkat lunak dan pengembangan aplikasi mobile. Memiliki pemahaman mendalam mengenai arsitektur perangkat lunak, logika pemrograman yang kuat, serta analisis data dan statistik. Berpengalaman dalam merancang dan membangun solusi digital yang responsif serta berkomitmen untuk terus mengadopsi teknologi terbaru guna menciptakan produk berdampak luas.
+                </p>
+            </div>
+
+            <!-- Pengalaman Kerja / Proyek -->
+            <div class="section">
+                <div class="section-title">Pengalaman & Pengembangan Proyek</div>
+                
+                <!-- Item Proyek 1 -->
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Pengembangan Aplikasi Mobile Mandiri</span>
+                        <span class="item-date">Awal 2026</span>
+                    </div>
+                    <div class="item-subtitle">Independent Flutter Developer</div>
+                    <ul class="item-desc">
+                        <li>Merancang arsitektur kode yang bersih dan membangun antarmuka aplikasi mobile yang responsif menggunakan framework Flutter dan bahasa pemrograman Dart.</li>
+                        <li>Menerapkan manajemen background services yang efisien untuk mengoptimalkan performa aplikasi serta mempersiapkan aplikasi untuk proses rilis di Google Play Store.</li>
+                    </ul>
+                </div>
+
+                <!-- Item Proyek 2 -->
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Proyek Sistem Informasi & Rekayasa Perangkat Lunak</span>
+                        <span class="item-date">2025</span>
+                    </div>
+                    <div class="item-subtitle">Software Engineer / Project Member</div>
+                    <ul class="item-desc">
+                        <li>Mengembangkan logika aplikasi dan fungsionalitas sistem menggunakan JavaScript untuk mendukung integrasi data yang dinamis.</li>
+                        <li>Menerapkan prinsip analisis data dan kalkulasi terstruktur dalam memecahkan kendala logika komputasi pada sistem.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Riwayat Pendidikan -->
+            <div class="section">
+                <div class="section-title">Riwayat Pendidikan</div>
+                
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Universitas Darussalam Gontor</span>
+                        <span class="item-date">2022 - 2026</span>
+                    </div>
+                    <div class="item-subtitle">Sarjana Komputer (S.Kom.) - Teknik Informatika / Sistem Informasi</div>
+                    <ul class="item-desc">
+                        <li>Mempelajari Rekayasa Perangkat Lunak, Arsitektur Komputer, Basis Data, Logika Matematika, dan Algoritma Pemrograman.</li>
+                        <li>Aktif mengembangkan proyek berbasis aplikasi mobile dan web selama masa studi.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Keahlian / Skills -->
+            <div class="section">
+                <div class="section-title">Keahlian</div>
+                
+                <div class="skills-container">
+                    <div class="skills-category">Keahlian Teknis (Hard Skills)</div>
+                    <div class="badge-group">
+                        <span class="badge tech">Dart</span>
+                        <span class="badge tech">Flutter</span>
+                        <span class="badge tech">JavaScript</span>
+                        <span class="badge tech">Analisis Data & Statistik</span>
+                        <span class="badge tech">Rekayasa Perangkat Lunak</span>
+                        <span class="badge tech">Logika Pemrograman</span>
+                    </div>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skills-category">Keahlian Interpersonal (Soft Skills)</div>
+                    <div class="badge-group">
+                        <span class="badge">Problem Solving</span>
+                        <span class="badge">Logika Analitis</span>
+                        <span class="badge">Manajemen Waktu</span>
+                        <span class="badge">Kerja Sama Tim</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
